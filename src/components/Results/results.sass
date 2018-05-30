@@ -1,0 +1,69 @@
+.results-container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  .wrapper-categories
+    display: flex
+    flex-direction: row
+    width: 600px
+    padding: 10px 0
+
+    .category
+      margin-right: 10px
+      font-size: 12px
+
+      &:after
+        margin-left: 10px
+        content: '>'
+
+      &:last-child:after
+        content: ''
+
+  .wrapper-items
+    display: flex
+    flex-direction: column
+    background-color: #ffffff
+    width: 600px
+
+    .item-not-found  
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding: 10px
+
+    .item
+      display: flex
+      flex-direction: row
+      padding: 10px
+
+      .item-picture
+        margin-right: 20px
+
+        img
+          height: 120px
+      
+      .item-description
+        width: 310px;
+
+        .item-link
+          text-decoration: none
+          color: #333333
+
+        .item-price
+          display: flex
+          flex-direction: row
+          font-size: 16px
+          font-weight: bold
+          
+          .decimal
+            font-size: 10px
+      
+      .item-something
+        display: flex
+        justify-content: center
+        width: 120px
+        align-items: center
+        font-size: 11px
