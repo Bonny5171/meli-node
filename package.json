@@ -13,7 +13,6 @@
     "build:server": "babel -d ./dist ./server -s",
     "build:dev": "npm run clean && npm run build:server && webpack --config webpack.config.js"
   },
-  "author": "Alan Oliveira",
   "license": "ISC",
   "dependencies": {
     "autobind-decorator": "^2.1.0",
